@@ -1,0 +1,85 @@
+/* ======== GOOGLE FONTS ======== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* ======== CSS VARIABLES ======== */
+:root {
+    /* ======== COLORS ======== */
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+
+    /* ======== FONT & TYPOGRAPHY ======== */
+    --body-font: 'Outfit', sans-serif;
+    
+    /* ======== SIZE ======== */
+    --body-font-size: 15px;
+
+    /* ======== WEIGHT ======== */
+    --text-regular: 400;
+    --text-bold: 700;
+}
+
+/* ======== CSS RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: var(--body-font-size);
+    font-family: var(--body-font);
+    background-color: var(--color-light-gray);
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* ======== MAIN ======== */
+.main {
+    height: 100%;
+    padding-inline: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code-component {
+    max-width: 320px;
+    padding: 1rem;
+    background-color: var(--color-white);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.qr-code-component__img {
+    border-radius: .9rem;
+    overflow: hidden;
+}
+
+.qr-code-component__title {
+    color: var(--color-dark-blue);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.qr-code-component__body {
+    color: var(--color-grayish-blue);
+    text-align: center;
+    padding: 0 .8rem 1rem;
+}
+
+.attribution {
+    text-align: center;
+    padding: .5rem 0;
+}
